@@ -12,10 +12,24 @@
         </div>
 
         <p>Email:</p>
-        <div class="input-group">
+        <div class="input-group pb-2">
 
             <input type="email" name="email" value="{{ old('email') }}">
             {{ $errors->first('email') }}
+        </div>
+
+        <p>Job Title:</p>
+        <div class="input-group pb-2">
+
+            <input type="text" name="jobTitle" value="{{ old('jobTitle') }}">
+            {{ $errors->first('jobTitle') }}
+        </div>
+
+        <p>Age:</p>
+        <div class="input-group pb-2">
+
+            <input type="number" name="age" value="{{ old('age') }}">
+            {{ $errors->first('age') }}
         </div>
 
         <button type="submit">Add Customer</button>
@@ -25,7 +39,7 @@
     
     <ul>
         @foreach($customers as $customer)
-            <li>{{ $customer->name }} <span class="text-muted"> ({{ $customer->email }}) </span></li>
+            <li>{{ $customer->name }} Age: {{ $customer->age }} <span class="text-muted"> ( {{ $customer->email }} Job Title: {{ $customer->jobTitle }} )</span> </li>
         @endforeach
     </ul>
 @endsection
