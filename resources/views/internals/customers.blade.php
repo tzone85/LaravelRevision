@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Learning Laravel 5.8')
+@section('title')
     Customer List
 @endsection
 
