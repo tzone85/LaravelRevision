@@ -44,6 +44,13 @@
                     {{ $errors->first('age') }}
                 </div>
 
+                <div class="form-group pb-2">
+
+                    <label for="random">Random:</label>
+                    <input type="text" name="random" value="{{ old('random') }}" class="form-control">
+                    {{ $errors->first('age') }}
+                </div>
+
                 <div class="form-group">
                     <label for="active">Status</label>
                     <select name="active" id="active" class="form-control">
