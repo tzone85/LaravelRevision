@@ -12,10 +12,17 @@ class CustomersController extends Controller
     	$activeCustomers = Customer::where('active', 1)->get();
     	$inactiveCustomers = Customer::where('active', 0)->get();
 
-		return view('internals.customers', [
+
+    	// compact/shorter way of passing data to views
+
+		return view('internals.customers', compact('activeCustomers', 'inactiveCustomers'));
+
+    	// long form of passing data to views
+
+    	/*return view('internals.customers', [
 			'activeCustomers' => $activeCustomers,
 			'inactiveCustomers' => $inactiveCustomers
-		]);
+		]);*/
 	}
 
 	public function store() {
