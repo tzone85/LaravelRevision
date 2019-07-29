@@ -9,10 +9,12 @@ class CustomersController extends Controller
 {
     public function list() {
 
-    	$customers = Customer::all();
+    	$activeCustomers = Customer::where('active', 1)->get();
+    	$inactiveCustomers = Customer::where('active', 0)->get();
 
 		return view('internals.customers', [
-			'customers' => $customers
+			'activeCustomers' => $activeCustomers,
+			'inactiveCustomers' => $inactiveCustomers
 		]);
 	}
 
@@ -23,7 +25,8 @@ class CustomersController extends Controller
 			'name' => 'required|alpha|min:3',
 			'email' => 'email|required|min:3|distinct',
 			'jobTitle'=>'required|alpha|min:2',
-			'age' => 'required|max:150|numeric'
+			'age' => 'required|max:150|numeric',
+			'active' => 'required|boolean'
 		]);
 
     	$customer = new Customer();
@@ -31,6 +34,7 @@ class CustomersController extends Controller
     	$customer->email = request('email');
     	$customer->jobTitle = request('jobTitle');
     	$customer->age = request('age');
+    	$customer->active = request('active');
     	$customer->save();
 
     	return back();

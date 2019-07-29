@@ -19,6 +19,7 @@ class CreateCustomersTable extends Migration
             $table->string('email');
             $table->string('jobTitle');
             $table->integer('age');
+            $table->string('active');
             $table->timestamps();
         });
     }
