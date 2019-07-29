@@ -9,8 +9,9 @@ class CustomersController extends Controller
 {
     public function list() {
 
-    	$activeCustomers = Customer::where('active', 1)->get();
-    	$inactiveCustomers = Customer::where('active', 0)->get();
+    	// active and inactive functions from the scope defined in the model
+    	$activeCustomers = Customer::active()->get();
+    	$inactiveCustomers = Customer::inactive()->get();
 
 		return view('internals.customers', [
 			'activeCustomers' => $activeCustomers,
@@ -20,22 +21,18 @@ class CustomersController extends Controller
 
 	public function store() {
 
-    	// add validation
+    	// add validation including the optional field
 		$data = request()->validate([
 			'name' => 'required|alpha|min:3',
 			'email' => 'email|required|min:3|distinct',
 			'jobTitle'=>'required|alpha|min:2',
 			'age' => 'required|max:150|numeric',
-			'active' => 'required|boolean'
+			'active' => 'required|boolean',
+			'random' => ''
 		]);
 
-    	$customer = new Customer();
-    	$customer->name = request('name');
-    	$customer->email = request('email');
-    	$customer->jobTitle = request('jobTitle');
-    	$customer->age = request('age');
-    	$customer->active = request('active');
-    	$customer->save();
+		// utalizing mass assignment
+		Customer::create($data);
 
     	return back();
 	}
