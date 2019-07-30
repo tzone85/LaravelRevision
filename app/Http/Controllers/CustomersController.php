@@ -8,19 +8,24 @@ use Illuminate\Http\Request;
 
 class CustomersController extends Controller
 {
-    public function list() {
+    public function index() {
 
     	// active and inactive functions from the scope defined in the model
-    	$activeCustomers = Customer::active()->get();
-    	$inactiveCustomers = Customer::inactive()->get();
-    	$companies = Company::all();
+//    	$activeCustomers = Customer::active()->get();
+//    	$inactiveCustomers = Customer::inactive()->get();
 
-    	return view('internals.customers', compact('activeCustomers', 'inactiveCustomers', 'companies'));
 
-//		return view('internals.customers', [
-//			'activeCustomers' => $activeCustomers,
-//			'inactiveCustomers' => $inactiveCustomers
-//		]);
+		$customers = Customer::all();
+
+    	return view('customers.index', compact('customers'));
+//    	return view('customers.index', compact('activeCustomers', 'inactiveCustomers'));
+
+	}
+
+	public function create()
+	{
+		$companies = Company::all();
+		return view('customers.create', compact('companies'));
 	}
 
 	public function store() {
@@ -39,6 +44,6 @@ class CustomersController extends Controller
 		// utalizing mass assignment
 		Customer::create($data);
 
-    	return back();
+    	return redirect('customers');
 	}
 }
