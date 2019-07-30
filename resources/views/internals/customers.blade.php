@@ -83,7 +83,7 @@
             <h3>Active Customers:</h3>
             <ul>
                 @foreach($activeCustomers as $activeCustomer)
-                    <li>{{ $activeCustomer->name }} Age: {{ $activeCustomer->age }} <span class="text-muted"> ( {{ $activeCustomer->email }} Job Title: {{ $activeCustomer->jobTitle }} )</span> </li>
+                    <li>{{ $activeCustomer->name }} Age: {{ $activeCustomer->age }} <span class="text-muted"> ( {{ $activeCustomer->company->name }} Job Title: {{ $activeCustomer->jobTitle }} )</span> </li>
                 @endforeach
             </ul>
         </div>
@@ -92,7 +92,25 @@
             <h3>Inactive Customers:</h3>
             <ul>
                 @foreach($inactiveCustomers as $inactiveCustomer)
-                    <li>{{ $inactiveCustomer->name }} Age: {{ $inactiveCustomer->age }} <span class="text-muted"> ( {{ $inactiveCustomer->email }} Job Title: {{ $inactiveCustomer->jobTitle }} )</span> </li>
+                    <li>{{ $inactiveCustomer->name }} Age: {{ $inactiveCustomer->age }} <span class="text-muted"> ( {{ $inactiveCustomer->company->name }} Job Title: {{ $inactiveCustomer->jobTitle }} )</span> </li>
+                @endforeach
+            </ul>
+        </div>
+
+
+
+        <div class="col-12">
+            <hr>
+            <ul>
+                @foreach($companies as $company)
+                    <h3>{{ $company->name }}</h3>
+
+                    <ul>
+                        @foreach($company->customers as $customer)
+                            <li>{{ $customer->name }}</li>
+                        @endforeach
+                    </ul>
+
                 @endforeach
             </ul>
         </div>

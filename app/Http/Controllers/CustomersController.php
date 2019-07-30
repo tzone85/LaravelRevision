@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Company;
 use App\Customer;
 use Illuminate\Http\Request;
 
@@ -12,10 +13,9 @@ class CustomersController extends Controller
     	// active and inactive functions from the scope defined in the model
     	$activeCustomers = Customer::active()->get();
     	$inactiveCustomers = Customer::inactive()->get();
-
     	$companies = Company::all();
 
-    	return view('internals.customer', compact('activeCustomers', 'inactiveCustomers', 'companies'));
+    	return view('internals.customers', compact('activeCustomers', 'inactiveCustomers', 'companies'));
 
 //		return view('internals.customers', [
 //			'activeCustomers' => $activeCustomers,
@@ -29,10 +29,11 @@ class CustomersController extends Controller
 		$data = request()->validate([
 			'name' => 'required|alpha|min:3',
 			'email' => 'email|required|min:3|distinct',
-			'jobTitle'=>'required|alpha|min:2',
+			'jobTitle'=>'required|string|alpha|min:2',
 			'age' => 'required|max:150|numeric',
 			'active' => 'required|boolean',
-			'random' => ''
+			'random' => 'required',
+			'company_id' => 'required'
 		]);
 
 		// utalizing mass assignment

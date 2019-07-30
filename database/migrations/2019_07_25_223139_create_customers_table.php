@@ -21,6 +21,7 @@ class CreateCustomersTable extends Migration
             $table->string('jobTitle');
             $table->integer('age');
             $table->string('active');
+            $table->string('random');
             $table->timestamps();
         });
     }
