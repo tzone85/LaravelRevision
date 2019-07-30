@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cbc793f-613a-42d6-bcef-95249acb73d9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Customer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Customer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CustomersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CustomersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_07_25_223139_create_customers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_07_25_223139_create_customers_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/internals/customers.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/internals/customers.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,8 +21,8 @@
       <file leaf-file-name="2019_07_25_223139_create_customers_table.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_25_223139_create_customers_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="21" column="34" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="34" />
+            <state relative-caret-position="345">
+              <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
               <folding>
                 <element signature="e#7#45#0#PHP" expanded="true" />
               </folding>
@@ -31,44 +33,53 @@
       <file leaf-file-name="CustomersController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CustomersController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+            <state relative-caret-position="467">
+              <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
               <folding>
-                <element signature="e#40#57#0#PHP" expanded="true" />
+                <element signature="e#40#56#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Customer.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Customer.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Customer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="169" selection-start-line="17" selection-start-column="169" selection-end-line="17" selection-end-column="169" />
+            <state relative-caret-position="233">
+              <caret line="45" column="81" selection-start-line="45" selection-start-column="81" selection-end-line="45" selection-end-column="81" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="customers.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="2019_07_29_174245_create_companies_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_29_174245_create_companies_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Company.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Company.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customers.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/internals/customers.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="444">
+              <caret line="102" column="16" selection-start-line="102" selection-start-column="16" selection-end-line="102" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="contact.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/contact.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="about.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/about.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
               <caret line="3" selection-start-line="3" selection-end-line="3" />
@@ -112,11 +123,13 @@
       <find>input-group</find>
       <find>@yield</find>
       <find>title</find>
-      <find>active</find>
       <find>n</find>
+      <find>active</find>
+      <find>internals.customer</find>
     </findStrings>
     <replaceStrings>
       <replace>form-group</replace>
+      <replace>company_id</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -135,10 +148,12 @@
         <option value="$PROJECT_DIR$/resources/views/about.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layout.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_07_25_223139_create_customers_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/internals/customers.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/CustomersController.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_07_29_174245_create_companies_table.php" />
         <option value="$PROJECT_DIR$/app/Customer.php" />
+        <option value="$PROJECT_DIR$/app/Company.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_07_25_223139_create_customers_table.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/CustomersController.php" />
+        <option value="$PROJECT_DIR$/resources/views/internals/customers.blade.php" />
       </list>
     </option>
   </component>
@@ -298,6 +313,19 @@
               <item name="firstphpappinawhilelaravel58" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="firstphpappinawhilelaravel58" type="b2602c69:ProjectViewProjectNode" />
+              <item name="firstphpappinawhilelaravel58" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="firstphpappinawhilelaravel58" type="b2602c69:ProjectViewProjectNode" />
+              <item name="firstphpappinawhilelaravel58" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="internals" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -305,7 +333,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="controller&#9;FILE&#9;file:///Users/thandomini/self-work/firstphpappinawhilelaravel58/app/Http/Controllers/CustomersController.php&#10;create_customers&#9;FILE&#9;file:///Users/thandomini/self-work/firstphpappinawhilelaravel58/database/migrations/2019_07_25_223139_create_customers_table.php&#10;layou&#9;FILE&#9;file:///Users/thandomini/self-work/firstphpappinawhilelaravel58/resources/views/layout.blade.php&#10;customer&#9;FILE&#9;file:///Users/thandomini/self-work/firstphpappinawhilelaravel58/app/Http/Controllers/CustomersController.php&#10;home&#9;FILE&#9;file:///Users/thandomini/self-work/firstphpappinawhilelaravel58/resources/views/home.blade.php&#10;contac&#9;FILE&#9;file:///Users/thandomini/self-work/firstphpappinawhilelaravel58/resources/views/contact.blade.php&#10;cont&#9;FILE&#9;file:///Users/thandomini/self-work/firstphpappinawhilelaravel58/resources/views/internals/customers.blade.php&#10;about&#9;FILE&#9;file:///Users/thandomini/self-work/firstphpappinawhilelaravel58/resources/views/about.blade.php&#10;hom&#9;FILE&#9;file:///Users/thandomini/self-work/firstphpappinawhilelaravel58/resources/views/home.blade.php&#10;nav&#9;FILE&#9;file:///Users/thandomini/self-work/firstphpappinawhilelaravel58/resources/views/nav.blade.php&#10;layout&#9;FILE&#9;file:///Users/thandomini/self-work/firstphpappinawhilelaravel58/resources/views/layout.blade.php&#10;web&#9;FILE&#9;file:///Users/thandomini/self-work/firstphpappinawhilelaravel58/routes/web.php&#10;.env&#9;FILE&#9;file:///Users/thandomini/self-work/firstphpappinawhilelaravel58/.env&#10;custo&#9;FILE&#9;file:///Users/thandomini/self-work/firstphpappinawhilelaravel58/app/Http/Controllers/CustomersController.php&#10;customers&#9;FILE&#9;file:///Users/thandomini/self-work/firstphpappinawhilelaravel58/resources/views/internals/customers.blade.php&#10;contact&#9;FILE&#9;file:///Users/thandomini/self-work/firstphpappinawhilelaravel58/resources/views/contact.blade.php&#10;.gitignore&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/thandomini/self-work/firstphpappinawhilelaravel58/resources/views/internals/customers.blade.php&#10;customers.b&#9;FILE&#9;file:///Users/thandomini/self-work/firstphpappinawhilelaravel58/resources/views/internals/customers.blade.php&#10;controller&#9;FILE&#9;file:///Users/thandomini/self-work/firstphpappinawhilelaravel58/app/Http/Controllers/CustomersController.php&#10;create_customers&#9;FILE&#9;file:///Users/thandomini/self-work/firstphpappinawhilelaravel58/database/migrations/2019_07_25_223139_create_customers_table.php&#10;layou&#9;FILE&#9;file:///Users/thandomini/self-work/firstphpappinawhilelaravel58/resources/views/layout.blade.php&#10;customer&#9;FILE&#9;file:///Users/thandomini/self-work/firstphpappinawhilelaravel58/app/Http/Controllers/CustomersController.php&#10;home&#9;FILE&#9;file:///Users/thandomini/self-work/firstphpappinawhilelaravel58/resources/views/home.blade.php&#10;contac&#9;FILE&#9;file:///Users/thandomini/self-work/firstphpappinawhilelaravel58/resources/views/contact.blade.php&#10;cont&#9;FILE&#9;file:///Users/thandomini/self-work/firstphpappinawhilelaravel58/resources/views/internals/customers.blade.php&#10;about&#9;FILE&#9;file:///Users/thandomini/self-work/firstphpappinawhilelaravel58/resources/views/about.blade.php&#10;hom&#9;FILE&#9;file:///Users/thandomini/self-work/firstphpappinawhilelaravel58/resources/views/home.blade.php&#10;nav&#9;FILE&#9;file:///Users/thandomini/self-work/firstphpappinawhilelaravel58/resources/views/nav.blade.php&#10;layout&#9;FILE&#9;file:///Users/thandomini/self-work/firstphpappinawhilelaravel58/resources/views/layout.blade.php&#10;web&#9;FILE&#9;file:///Users/thandomini/self-work/firstphpappinawhilelaravel58/routes/web.php&#10;.env&#9;FILE&#9;file:///Users/thandomini/self-work/firstphpappinawhilelaravel58/.env&#10;custo&#9;FILE&#9;file:///Users/thandomini/self-work/firstphpappinawhilelaravel58/app/Http/Controllers/CustomersController.php&#10;customers&#9;FILE&#9;file:///Users/thandomini/self-work/firstphpappinawhilelaravel58/resources/views/internals/customers.blade.php&#10;contact&#9;FILE&#9;file:///Users/thandomini/self-work/firstphpappinawhilelaravel58/resources/views/contact.blade.php&#10;.gitignore&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -341,7 +369,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33970000" />
+    <option name="totallyTimeSpent" value="41880000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="851" extended-state="6" />
@@ -353,8 +381,8 @@
       <window_info anchor="bottom" id="Run" order="7" />
       <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.3501326" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.24606581" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.3501326" />
+      <window_info content_ui="combo" id="Project" order="2" weight="0.24606581" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="bottom" id="Find" order="6" />
@@ -387,22 +415,22 @@
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info id="npm" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="7" />
-      <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="2" weight="0.24606581" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="Find" order="6" />
       <window_info anchor="right" id="Database" order="0" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.3501326" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.3501326" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="5" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.24606581" />
+      <window_info id="Favorites" order="0" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,24 +439,12 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CustomersController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-          <folding>
-            <element signature="e#40#57#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/finder/Gitignore.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -517,7 +533,7 @@
         <state relative-caret-position="73">
           <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
           <folding>
-            <element signature="e#40#57#0#PHP" expanded="true" />
+            <element signature="e#40#56#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -754,16 +770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_25_223139_create_customers_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="21" column="34" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="34" />
-          <folding>
-            <element signature="e#7#45#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/User.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -774,27 +780,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/internals/customers.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Company.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CustomersController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
-          <folding>
-            <element signature="e#40#57#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="225">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Customer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="169" selection-start-line="17" selection-start-column="169" selection-end-line="17" selection-end-column="169" />
+        <state relative-caret-position="233">
+          <caret line="45" column="81" selection-start-line="45" selection-start-column="81" selection-end-line="45" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_29_174245_create_companies_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_25_223139_create_customers_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+          <folding>
+            <element signature="e#7#45#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CustomersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+          <folding>
+            <element signature="e#40#56#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/internals/customers.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="102" column="16" selection-start-line="102" selection-start-column="16" selection-end-line="102" selection-end-column="16" />
         </state>
       </provider>
     </entry>

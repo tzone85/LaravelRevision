@@ -41,4 +41,13 @@ class Customer extends Model
 	{
 		return $query->where('active', 0);
 	}
+
+	/**
+	 * Association between a company and a customer, customer belongsTo a company
+	 * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+	 */
+	public function company()
+	{
+		return $this->belongsTo(Company::class);
+	}
 }
