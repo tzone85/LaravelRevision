@@ -76,20 +76,23 @@
         </div>
     </div>
 
-    <div class="col-12">
-        <hr>
-        <ul>
-            @foreach($companies as $company)
-                <h3>{{ $company->name }}</h3>
+    <div class="row">
+        <div class="col-12">
+            <hr>
+            <ul>
+                @foreach($companies as $company)
+                    <h3>{{ $company->name }}</h3>
 
-                <ul>
-                    @foreach($company->customers as $customer)
-                        <li>{{ $customer->name }}</li>
-                    @endforeach
-                </ul>
+                    <ul>
+                        @foreach($company->customers as $customer)
+                            <li>{{ $customer->name }}</li>
+                        @endforeach
+                    </ul>
 
-            @endforeach
-        </ul>
+                @endforeach
+            </ul>
+        </div>
     </div>
+
 
 @endsection
