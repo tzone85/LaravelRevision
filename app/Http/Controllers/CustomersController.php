@@ -13,10 +13,14 @@ class CustomersController extends Controller
     	$activeCustomers = Customer::active()->get();
     	$inactiveCustomers = Customer::inactive()->get();
 
-		return view('internals.customers', [
-			'activeCustomers' => $activeCustomers,
-			'inactiveCustomers' => $inactiveCustomers
-		]);
+    	$companies = Company::all();
+
+    	return view('internals.customer', compact('activeCustomers', 'inactiveCustomers', 'companies'));
+
+//		return view('internals.customers', [
+//			'activeCustomers' => $activeCustomers,
+//			'inactiveCustomers' => $inactiveCustomers
+//		]);
 	}
 
 	public function store() {
