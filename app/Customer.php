@@ -23,6 +23,20 @@ class Customer extends Model
 	protected $guarded = [];
 
 	/**
+	 * Accessors and Mutators, allow us to interject something, and do something to it, before it displays on the view.
+	 * naming convention. getColumnNameAttribute (esp if we had more cases like pending, active, inactive, ...)
+	 * @param $attribute
+	 * @return array
+	 */
+	public function getActiveAttribute($attribute)
+	{
+		return [
+			0 => 'Inactive',
+			1 => 'Active'
+		][$attribute];
+	}
+
+	/**
 	 * scope function for active customers
 	 * @param $query
 	 * @return mixed

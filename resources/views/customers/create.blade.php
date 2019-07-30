@@ -1,20 +1,20 @@
 @extends('layout')
 
 @section('title')
-    Customer List
+    Add New Customer
 @endsection
 
 @section('content')
 
     <div class="row">
         <div class="col-12">
-            <h1>Customers</h1>
+            <h1>Add New Customer</h1>
         </div>
     </div>
 
     <div class="row">
         <div class="col-12">
-            <form action="customers" method="post">
+            <form action="/customers" method="post">
 
                 <div class="form-group pb-2">
 
@@ -76,29 +76,7 @@
         </div>
     </div>
 
-    <hr>
-
     <div class="row">
-        <div class="col-6">
-            <h3>Active Customers:</h3>
-            <ul>
-                @foreach($activeCustomers as $activeCustomer)
-                    <li>{{ $activeCustomer->name }} Age: {{ $activeCustomer->age }} <span class="text-muted"> ( {{ $activeCustomer->company->name }} Job Title: {{ $activeCustomer->jobTitle }} )</span> </li>
-                @endforeach
-            </ul>
-        </div>
-
-        <div class="col-6">
-            <h3>Inactive Customers:</h3>
-            <ul>
-                @foreach($inactiveCustomers as $inactiveCustomer)
-                    <li>{{ $inactiveCustomer->name }} Age: {{ $inactiveCustomer->age }} <span class="text-muted"> ( {{ $inactiveCustomer->company->name }} Job Title: {{ $inactiveCustomer->jobTitle }} )</span> </li>
-                @endforeach
-            </ul>
-        </div>
-
-
-
         <div class="col-12">
             <hr>
             <ul>
@@ -115,5 +93,6 @@
             </ul>
         </div>
     </div>
+
 
 @endsection
